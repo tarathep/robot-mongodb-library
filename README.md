@@ -1,5 +1,5 @@
 # robot-kafka-library
-### robot framework extension test kafka message queue system
+### robot framework extension for test connect mongodb
 
 https://pypi.org/project/robot-mongodb-library/
 
