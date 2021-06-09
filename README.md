@@ -17,7 +17,11 @@ Library   RobotMongoDBLibrary.Delete
 
 
 *** Variables ***
-&{MONGODB_CONNECT_STRING}    host=127.0.0.1   port=27017   username=admin   password=password    database=robotdb     collection=customer
+# CONNECT WITH PARAMS
+# &{MONGODB_CONNECT_STRING}    host=127.0.0.1   port=27017   username=admin   password=password    database=robotdb     collection=customer
+
+# CONNECT WITH CONNECTION STRING CLUSTER
+&{MONGODB_CONNECT_STRING}=   connection=mongodb://admin:password@127.0.0.1:27017,127.0.0.2:27017,127.0.0.3:27017/robotdb?authSource=robotdb    database=robotdb   collection=customer
 
 
 *** Test Cases ***
