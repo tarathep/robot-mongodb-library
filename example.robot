@@ -32,6 +32,7 @@ Test update data phone into mongodb by ID
     &{NEWDATA}     Create Dictionary        phone=0649359xxx
     ${MSG}      Update   ${MONGODB_CONNECT_STRING}    X100001      ${NEWDATA}
     Should Be Equal    ${MSG}    UPDATED SUCCESS
+.
 
 
 Test find data by ID from mongodb
